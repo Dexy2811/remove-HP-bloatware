@@ -88,4 +88,4 @@ $key  = @(
         }
 Write-Output "Script finnished"
 
-sleep 60
+start-sleep 60
