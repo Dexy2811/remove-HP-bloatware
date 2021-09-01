@@ -1,4 +1,5 @@
 ﻿if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 Get-AppxPackage *smart* | Remove-AppxPackage
 Get-AppxPackage *Sure* | Remove-AppxPackage
 Get-AppxPackage *Documentation* | Remove-AppxPackage
@@ -7,6 +8,7 @@ Get-AppxPackage *Connection Optimizer* | Remove-AppxPackage
 Get-Appxpackage *ConsentManager* | Remove-AppxPackage
 Get-AppxPackage *CommRecovery* | Remove-AppxPackage
 Get-AppxPackage *AD2F1837.HPPrivacySettings* | Remove-AppxPackage
+Get-AppxPackage *AD2F1837.HPPowerManager* | Remove-AppxPackage
 Get-AppxPackage Microsoft.windowscommunicationsapps | Remove-AppxPackage
 Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage
 Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
@@ -15,6 +17,7 @@ Get-AppxPackage Microsoft.XboxGameOverlay | Remove-AppxPackage
 Get-AppxPackage Microsoft.XboxApp | Remove-AppxPackage
 Get-AppxPackage Microsoft.Xbox.TCUI | Remove-AppxPackage
 Get-AppxPackage Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage
+Get-AppxPackage *groove* | Remove-AppxPackage
 Get-AppxPackage *Client Security* | Remove-AppxPackage
 Get-AppPackage Microsoft.MixedReality.Portal | Remove-AppPackage -AllUsers
 Get-AppxPackage Microsoft.YourPhone | Remove-AppPackage -AllUsers
@@ -41,6 +44,14 @@ Get-AppxPackage *Facebook* | Remove-AppxPackage
 Get-AppxPackage *Minecraft* | Remove-AppxPackage
 Get-AppxPackage *Royal Revolt* | Remove-AppxPackage
 Get-AppxPackage *Sway* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.People* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxGameCallableUI* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Wallet* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.ZuneMusic* | Remove-AppxPackage
+Get-AppxPackage ** | Remove-AppxPackage
+Get-AppxPackage ** | Remove-AppxPackage
+Get-AppxPackage ** | Remove-AppxPackage
+Get-AppxPackage ** | Remove-AppxPackage
 Get-AppxPackage *EclipseManager* | Remove-AppxPackage
 Get-AppxPackage *ActiproSoftwareLLC* | Remove-AppxPackage
 Get-AppxPackage *AdobeSystemsIncorporated.AdobePhotoshopExpress* | Remove-AppxPackage
