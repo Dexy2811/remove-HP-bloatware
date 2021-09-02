@@ -1,8 +1,5 @@
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-Write-Output "Removing Bloatware. please wait."    
-Write-Progress -Activity "Removing bloatware" -Status "$i% Complete:" -PercentComplete $i
-
 Get-AppxPackage *smart* | Remove-AppxPackage
 Get-AppxPackage *Sure* | Remove-AppxPackage
 Get-AppxPackage *Documentation* | Remove-AppxPackage
@@ -102,15 +99,13 @@ $key  = @(
         Write-Output "Removing $Key from registry"
         Remove-Item $Key -Recurse
     }
-    Clear-Host
-
+Clear-Host
 Write-Output "Bloatware removed."
-Start-Sleep
+Start-Sleep -Seconds 5
 
 $source = ".\DefaultLayouts.xml"
 $destination = "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\"
 Copy-Item $source -Destination $destination -Recurse -Force
-Write-Progress -Activity "File replaced." -Status "$i% Complete:" -PercentComplete $i
 
 Write-Output "File replaced."
 Clear-Host
