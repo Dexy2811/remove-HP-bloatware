@@ -48,9 +48,9 @@ Get-AppxPackage *Microsoft.People* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.XboxGameCallableUI* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Wallet* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.ZuneMusic* | Remove-AppxPackage
-Get-AppxPackage ** | Remove-AppxPackage
-Get-AppxPackage ** | Remove-AppxPackage
-Get-AppxPackage ** | Remove-AppxPackage
+Get-AppxPackage *netflix* | Remove-AppxPackage
+Get-AppxPackage *Instagram* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.GamingApp* | Remove-AppxPackage
 Get-AppxPackage ** | Remove-AppxPackage
 Get-AppxPackage *EclipseManager* | Remove-AppxPackage
 Get-AppxPackage *ActiproSoftwareLLC* | Remove-AppxPackage
@@ -58,9 +58,11 @@ Get-AppxPackage *AdobeSystemsIncorporated.AdobePhotoshopExpress* | Remove-AppxPa
 Get-AppxPackage *PandoraMediaInc* | Remove-AppxPackage
 Get-AppxPackage *BubbleWitch3Saga* | Remove-AppxPackage
 Get-AppxPackage *Twitter* | Remove-AppxPackage
+Get-AppxPackage Microsoft.WindowsSoundRecorder | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe* | Remove-AppxPackage
-Get-AppxPackage Microsoft.WindowsSoundRecorder | Remove-AppxPackage
+Get-AppxPackage *Microsoft.BingNews* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.BingWeather* | Remove-AppxPackage
 Get-AppxPackage Microsoft.BingFoodAndDrink | Remove-AppxPackage
 Get-AppxPackage Microsoft.BingHealthAndFitness | Remove-AppxPackage
 Get-AppxPackage Microsoft.BingTravel | Remove-AppxPackage
