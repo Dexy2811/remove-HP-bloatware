@@ -51,7 +51,6 @@ Get-AppxPackage *Microsoft.ZuneMusic* | Remove-AppxPackage
 Get-AppxPackage *netflix* | Remove-AppxPackage
 Get-AppxPackage *Instagram* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.GamingApp* | Remove-AppxPackage
-Get-AppxPackage ** | Remove-AppxPackage
 Get-AppxPackage *EclipseManager* | Remove-AppxPackage
 Get-AppxPackage *ActiproSoftwareLLC* | Remove-AppxPackage
 Get-AppxPackage *AdobeSystemsIncorporated.AdobePhotoshopExpress* | Remove-AppxPackage
