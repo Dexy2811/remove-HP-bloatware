@@ -51,7 +51,6 @@ Get-AppxPackage *Microsoft.ZuneMusic* | Remove-AppxPackage
 Get-AppxPackage *netflix* | Remove-AppxPackage
 Get-AppxPackage *Instagram* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.GamingApp* | Remove-AppxPackage
-Get-AppxPackage ** | Remove-AppxPackage
 Get-AppxPackage *EclipseManager* | Remove-AppxPackage
 Get-AppxPackage *ActiproSoftwareLLC* | Remove-AppxPackage
 Get-AppxPackage *AdobeSystemsIncorporated.AdobePhotoshopExpress* | Remove-AppxPackage
@@ -98,7 +97,17 @@ $key  = @(
     ForEach ($Key in $Keys) {
         Write-Output "Removing $Key from registry"
         Remove-Item $Key -Recurse
-        }
+    }
+Clear-Host
+Write-Output "Bloatware removed."
+Start-Sleep -Seconds 5
+
+$source = ".\DefaultLayouts.xml"
+$destination = "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\"
+Copy-Item $source -Destination $destination -Recurse -Force
+
+Write-Output "File replaced."
+Clear-Host
 Write-Output "Script finnished"
 
 start-sleep 60
