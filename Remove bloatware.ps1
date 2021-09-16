@@ -19,7 +19,7 @@ Get-AppxPackage Microsoft.Xbox.TCUI | Remove-AppxPackage
 Get-AppxPackage Microsoft.XboxSpeechToTextOverlay | Remove-AppxPackage
 Get-AppxPackage *groove* | Remove-AppxPackage
 Get-AppxPackage *Client Security* | Remove-AppxPackage
-Get-AppPackage Microsoft.MixedReality.Portal | Remove-AppPackage -AllUsers
+Get-AppxPackage Microsoft.MixedReality.Portal | Remove-AppPackage -AllUsers
 Get-AppxPackage Microsoft.YourPhone | Remove-AppPackage -AllUsers
 Get-AppxPackage Microsoft.MicrosoftSolitaireCollection | Remove-AppPackage -AllUsers
 Get-AppxPackage Microsoft.Getstarted | Remove-AppPackage -AllUsers
