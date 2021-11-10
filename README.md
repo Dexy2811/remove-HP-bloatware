@@ -1,4 +1,5 @@
 # remove-HP-bloatware
+# This is WIP (Work in progress)
 removes HP &amp; windows bloatware
 
 Use this if there is a program you cannot uninstall without other programs or accounts
