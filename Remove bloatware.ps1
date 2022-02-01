@@ -10,6 +10,7 @@ Get-AppxPackage *CommRecovery* | Remove-AppxPackage
 Get-AppxPackage *AD2F1837.HPPrivacySettings* | Remove-AppxPackage
 Get-AppxPackage *AD2F1837.HPPowerManager* | Remove-AppxPackage
 Get-AppxPackage Microsoft.windowscommunicationsapps | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxGameCallableUI* | Remove-AppxPackage
 Get-AppxPackage Microsoft.XboxGamingOverlay | Remove-AppxPackage
 Get-AppxPackage Microsoft.SkypeApp | Remove-AppxPackage
 Get-AppxPackage Microsoft.XboxIdentityProvider | Remove-AppxPackage
@@ -45,7 +46,6 @@ Get-AppxPackage *Minecraft* | Remove-AppxPackage
 Get-AppxPackage *Royal Revolt* | Remove-AppxPackage
 Get-AppxPackage *Sway* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.People* | Remove-AppxPackage
-Get-AppxPackage *Microsoft.XboxGameCallableUI* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.Wallet* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.ZuneMusic* | Remove-AppxPackage
 Get-AppxPackage *netflix* | Remove-AppxPackage
@@ -100,13 +100,8 @@ $key  = @(
     }
 Clear-Host
 Write-Output "Bloatware removed."
-Start-Sleep -Seconds 5
+Start-Sleep -Seconds 10
 
-$source = ".\DefaultLayouts.xml"
-$destination = "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\"
-Copy-Item $source -Destination $destination -Recurse -Force
-
-Write-Output "File replaced."
 Clear-Host
 Write-Output "Script finnished"
 
