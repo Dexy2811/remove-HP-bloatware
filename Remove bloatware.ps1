@@ -9,6 +9,7 @@ Get-Appxpackage *ConsentManager* | Remove-AppxPackage -AllUsers
 Get-AppxPackage *CommRecovery* | Remove-AppxPackage 
 Get-AppxPackage *HPPrivacySettings* | Remove-AppxPackage -AllUsers
 Get-AppxPackage *hppc* | Remove-AppxPackage -AllUsers
+Get-AppxPackage *AD2F1837.HPSystemInformation* | Remove-AppxPackage -AllUsers
 Get-AppxPackage *hppower* | Remove-AppxPackage -AllUsers
 Get-AppxPackage Microsoft.windowscommunicationsapps | Remove-AppxPackage
 Get-AppxPackage *Microsoft.XboxGameCallableUI* | Remove-AppxPackage
@@ -63,7 +64,7 @@ Get-AppxPackage *PandoraMediaInc* | Remove-AppxPackage
 Get-AppxPackage *BubbleWitch3Saga* | Remove-AppxPackage
 Get-AppxPackage *Twitter* | Remove-AppxPackage
 Get-AppxPackage Microsoft.WindowsSoundRecorder | Remove-AppxPackage
-Get-AppxPackage *Microsoft.Advertising* | Remove-AppxPackage
+Get-AppxPackage *Microsoft.tising* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingNews* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.BingWeather* | Remove-AppxPackage
 Get-AppxPackage Microsoft.BingFoodAndDrink | Remove-AppxPackage
