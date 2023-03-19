@@ -1,4 +1,4 @@
-# remove-HP-bloatware
+# remove Dell and HP bloatware Automatic script
 ### This is WIP (Work in progress)
 removes HP &amp; windows bloatware
 
